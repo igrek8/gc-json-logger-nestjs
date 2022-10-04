@@ -1,0 +1,8 @@
+CODEOWNERS
+README.md
+yarn.lock
+docs/
+LICENSE
+dist/
+node_modules/
+coverage/

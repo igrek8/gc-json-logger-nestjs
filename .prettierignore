@@ -1,0 +1,11 @@
+.github/CODEOWNERS
+.prettierignore
+.eslintignore
+.gitignore
+.tsbuildinfo
+coverage
+.npmrc
+LICENSE
+dist/
+*.png
+__snapshots__/

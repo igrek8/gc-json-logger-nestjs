@@ -1,0 +1,17 @@
+name: Add labels to pull request
+
+on:
+  pull_request:
+    types:
+      - opened
+      - edited
+      - synchronize
+
+jobs:
+  label:
+    name: Add labels to pull request
+    runs-on: ubuntu-latest
+    steps:
+      - uses: srvaroa/labeler@v0.9
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

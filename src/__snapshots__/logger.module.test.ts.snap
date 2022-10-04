@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoggerModule logs a request 1`] = `
+[
+  [
+    200,
+    "200 POST /",
+    {
+      "httpRequest": {
+        "protocol": "HTTP/1.1",
+        "referer": "https://example.com/",
+        "remoteIp": "::ffff:127.0.0.1",
+        "requestMethod": "POST",
+        "requestSize": "223",
+        "requestUrl": "http://127.0.0.1:50000/echo",
+        "serverIp": "::ffff:127.0.0.1:50000",
+        "userAgent": "curl/7.64.1",
+      },
+    },
+  ],
+  [
+    200,
+    "received data",
+    {
+      "echo": {
+        "message": "test",
+      },
+    },
+  ],
+  [
+    200,
+    "200 POST /echo (0ms)",
+    {
+      "httpRequest": {
+        "latency": "0ms",
+        "responseSize": "225",
+        "status": 200,
+      },
+      "request": {
+        "body": {
+          "message": "test",
+        },
+        "headers": {
+          "accept-encoding": "gzip, deflate",
+          "connection": "close",
+          "content-length": "18",
+          "content-type": "application/json",
+          "host": "127.0.0.1:50000",
+          "referer": "https://example.com/",
+          "user-agent": "curl/7.64.1",
+        },
+      },
+      "response": {
+        "body": {
+          "message": "test",
+        },
+        "headers": {
+          "content-length": "18",
+          "content-type": "application/json; charset=utf-8",
+          "etag": "W/"12-o4TMqk657HDSoDIn46l7b2N/YX8"",
+          "x-powered-by": "Express",
+        },
+      },
+    },
+  ],
+]
+`;

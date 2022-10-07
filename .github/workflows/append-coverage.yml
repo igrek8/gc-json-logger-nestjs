@@ -1,4 +1,4 @@
-name: Report coverage
+name: Append coverage
 
 on:
   pull_request:
@@ -8,8 +8,8 @@ on:
       - synchronize
 
 jobs:
-  coverage:
-    name: Collect & report code coverage
+  append-coverage:
+    name: Add coverage as comment
     runs-on: ubuntu-latest
     if: "!contains(github.event.pull_request.title, 'chore(deps)')"
     steps:

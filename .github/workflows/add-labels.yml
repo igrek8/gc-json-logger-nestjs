@@ -1,4 +1,4 @@
-name: Add labels to pull request
+name: Add labels to PR
 
 on:
   pull_request:
@@ -8,8 +8,8 @@ on:
       - synchronize
 
 jobs:
-  label:
-    name: Add labels to pull request
+  add-labels:
+    name: Add labels
     runs-on: ubuntu-latest
     steps:
       - uses: srvaroa/labeler@v0.9

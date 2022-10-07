@@ -1,13 +1,15 @@
 name: Define labels
+
 on:
   push:
     branches:
       - main
     paths:
       - .github/labels.yml
+
 jobs:
-  update-labels:
-    name: Update labels
+  define-labels:
+    name: Define labels
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3

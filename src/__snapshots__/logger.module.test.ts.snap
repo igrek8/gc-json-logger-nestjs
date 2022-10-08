@@ -4,7 +4,7 @@ exports[`LoggerModule logs a request 1`] = `
 [
   [
     200,
-    "200 POST /",
+    "POST /",
     {
       "httpRequest": {
         "protocol": "HTTP/1.1",
@@ -15,6 +15,29 @@ exports[`LoggerModule logs a request 1`] = `
         "requestUrl": "http://127.0.0.1:50000/echo",
         "serverIp": "::ffff:127.0.0.1:50000",
         "userAgent": "curl/7.64.1",
+      },
+      "labels": {
+        "event": "http:request",
+      },
+      "request": {
+        "body": {
+          "message": "test",
+        },
+        "headers": {
+          "accept-encoding": "gzip, deflate",
+          "connection": "close",
+          "content-length": "18",
+          "content-type": "application/json",
+          "host": "127.0.0.1:50000",
+          "referer": "https://example.com/",
+          "user-agent": "curl/7.64.1",
+        },
+      },
+      "response": {
+        "body": undefined,
+        "headers": {
+          "x-powered-by": "Express",
+        },
       },
     },
   ],
@@ -35,6 +58,9 @@ exports[`LoggerModule logs a request 1`] = `
         "latency": "0ms",
         "responseSize": "225",
         "status": 200,
+      },
+      "labels": {
+        "event": "http:response",
       },
       "request": {
         "body": {

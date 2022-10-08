@@ -34,7 +34,6 @@ exports[`LoggerModule logs a request 1`] = `
         },
       },
       "response": {
-        "body": undefined,
         "headers": {
           "x-powered-by": "Express",
         },

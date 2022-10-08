@@ -10,28 +10,16 @@ describe('createNestLogger', () => {
     const logger = createNestLogger(Logger.getLogger());
     logger.setLogLevels?.(['verbose', 'debug', 'log', 'warn', 'error']);
 
-    logger.verbose?.('verbose');
-    logger.debug?.('debug');
-    logger.log('log');
-    logger.warn?.('warn');
-    logger.error('error', 'Error: test');
+    logger.verbose?.('verbose', 'context');
+    logger.debug?.('debug', 'context');
+    logger.log('log', 'context');
+    logger.warn?.('warn', 'context');
+    logger.error('error', 'Error: test', 'context');
 
-    expect(log).toHaveBeenCalledWith(Severity.DEFAULT, 'verbose', undefined);
-    expect(log).toHaveBeenCalledWith(Severity.DEBUG, 'debug', undefined);
-    expect(log).toHaveBeenCalledWith(Severity.INFO, 'log', undefined);
-    expect(log).toHaveBeenCalledWith(Severity.WARNING, 'warn', undefined);
-    expect(log).toHaveBeenCalledWith(Severity.ERROR, 'error', { error });
-
-    logger.verbose?.('verbose', 'extra');
-    logger.debug?.('debug', 'extra');
-    logger.log('log', 'extra');
-    logger.warn?.('warn', 'extra');
-    logger.error('error', 'Error: test', 'extra');
-
-    expect(log).toHaveBeenCalledWith(Severity.DEFAULT, 'verbose', { args: ['extra'] });
-    expect(log).toHaveBeenCalledWith(Severity.DEBUG, 'debug', { args: ['extra'] });
-    expect(log).toHaveBeenCalledWith(Severity.INFO, 'log', { args: ['extra'] });
-    expect(log).toHaveBeenCalledWith(Severity.WARNING, 'warn', { args: ['extra'] });
-    expect(log).toHaveBeenCalledWith(Severity.ERROR, 'error', { args: ['extra'], error });
+    expect(log).toHaveBeenCalledWith(Severity.DEFAULT, 'verbose', { context: 'context' });
+    expect(log).toHaveBeenCalledWith(Severity.DEBUG, 'debug', { context: 'context' });
+    expect(log).toHaveBeenCalledWith(Severity.INFO, 'log', { context: 'context' });
+    expect(log).toHaveBeenCalledWith(Severity.WARNING, 'warn', { context: 'context' });
+    expect(log).toHaveBeenCalledWith(Severity.ERROR, 'error', { error, context: 'context' });
   });
 });

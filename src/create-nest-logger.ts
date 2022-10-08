@@ -2,37 +2,37 @@ import { LoggerService, LogLevel } from '@nestjs/common';
 import { Logger } from 'gc-json-logger';
 
 export function createNestLogger(logger: Logger): LoggerService {
-  let logLevels: LogLevel[] = ['verbose', 'debug', 'log', 'warn', 'error'];
+  let logLevels = new Set<LogLevel>(['log', 'warn', 'error']);
   return {
-    error(message: string, stack?: string, ...args) {
-      if (logLevels.includes('error')) {
+    error(message: string, stack: string, context: string) {
+      if (logLevels.has('error')) {
         const error = new Error(message);
-        if (stack) error.stack = stack;
-        logger.error(message, { error, args: args.length > 0 ? args : undefined });
+        error.stack = stack;
+        logger.error(message, { error, context });
       }
     },
-    log(message, ...args) {
-      if (logLevels.includes('log')) {
-        logger.info(message, args.length > 0 ? { args } : undefined);
+    log(message, context) {
+      if (logLevels.has('log')) {
+        logger.info(message, { context });
       }
     },
-    warn(message, ...args) {
-      if (logLevels.includes('warn')) {
-        logger.warning(message, args.length > 0 ? { args } : undefined);
+    warn(message: string, context: string) {
+      if (logLevels.has('warn')) {
+        logger.warning(message, { context });
       }
     },
-    debug(message, ...args) {
-      if (logLevels.includes('debug')) {
-        logger.debug(message, args.length > 0 ? { args } : undefined);
+    debug(message: string, context: string) {
+      if (logLevels.has('debug')) {
+        logger.debug(message, { context });
       }
     },
-    verbose(message, ...args) {
-      if (logLevels.includes('verbose')) {
-        logger.default(message, args.length > 0 ? { args } : undefined);
+    verbose(message: string, context: string) {
+      if (logLevels.has('verbose')) {
+        logger.default(message, { context });
       }
     },
     setLogLevels(levels) {
-      logLevels = levels;
+      logLevels = new Set<LogLevel>(levels);
     },
   };
 }

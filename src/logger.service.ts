@@ -1,13 +1,9 @@
 import { Injectable, Scope } from '@nestjs/common';
-import { LogEntryMetadata, Logger, Severity } from 'gc-json-logger';
+import { ILogger, LogEntryMetadata, Logger, Severity } from 'gc-json-logger';
 
 @Injectable({ scope: Scope.TRANSIENT })
-export class LoggerService implements Omit<Logger, 'name'> {
-  protected logger: Logger;
-
-  constructor() {
-    this.logger = Logger.getLogger();
-  }
+export class LoggerService implements ILogger {
+  protected readonly logger: Logger = Logger.getLogger();
 
   log(severity: Severity, message: string, meta?: LogEntryMetadata): void {
     return this.logger.log(severity, message, meta);

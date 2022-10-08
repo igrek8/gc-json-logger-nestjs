@@ -1,4 +1,5 @@
-import { LogEntryMetadata, Severity } from 'gc-json-logger';
+import { Severity } from 'gc-json-logger';
+import { LogEntryMetadata } from 'gc-json-logger-express';
 
 export interface LogEntry {
   severity: Severity;

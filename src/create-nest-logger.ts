@@ -4,10 +4,10 @@ import { Logger } from 'gc-json-logger';
 export function createNestLogger(logger: Logger): LoggerService {
   let logLevels: LogLevel[] = ['verbose', 'debug', 'log', 'warn', 'error'];
   return {
-    error(message, stack, ...args) {
+    error(message: string, stack?: string, ...args) {
       if (logLevels.includes('error')) {
         const error = new Error(message);
-        error.stack = stack;
+        if (stack) error.stack = stack;
         logger.error(message, { error, args: args.length > 0 ? args : undefined });
       }
     },

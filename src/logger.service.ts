@@ -1,47 +1,45 @@
-import { Injectable, Scope } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 import { ILogger, LogEntryMetadata, Logger, Severity } from 'gc-json-logger';
 
-@Injectable({ scope: Scope.TRANSIENT })
+@Injectable()
 export class LoggerService implements ILogger {
-  protected readonly logger: Logger = Logger.getLogger();
-
   log(severity: Severity, message: string, meta?: LogEntryMetadata): void {
-    return this.logger.log(severity, message, meta);
+    return Logger.getLogger().log(severity, message, meta);
   }
 
   default(message: string, meta?: LogEntryMetadata): void {
-    return this.logger.default(message, meta);
+    return Logger.getLogger().default(message, meta);
   }
 
   debug(message: string, meta?: LogEntryMetadata): void {
-    return this.logger.debug(message, meta);
+    return Logger.getLogger().debug(message, meta);
   }
 
   info(message: string, meta?: LogEntryMetadata): void {
-    return this.logger.info(message, meta);
+    return Logger.getLogger().info(message, meta);
   }
 
   notice(message: string, meta?: LogEntryMetadata): void {
-    return this.logger.notice(message, meta);
+    return Logger.getLogger().notice(message, meta);
   }
 
   warning(message: string, meta?: LogEntryMetadata): void {
-    return this.logger.warning(message, meta);
+    return Logger.getLogger().warning(message, meta);
   }
 
   error(message: string, meta?: LogEntryMetadata): void {
-    return this.logger.error(message, meta);
+    return Logger.getLogger().error(message, meta);
   }
 
   critical(message: string, meta?: LogEntryMetadata): void {
-    return this.logger.critical(message, meta);
+    return Logger.getLogger().critical(message, meta);
   }
 
   alert(message: string, meta?: LogEntryMetadata): void {
-    return this.logger.alert(message, meta);
+    return Logger.getLogger().alert(message, meta);
   }
 
   emergency(message: string, meta?: LogEntryMetadata): void {
-    return this.logger.emergency(message, meta);
+    return Logger.getLogger().emergency(message, meta);
   }
 }

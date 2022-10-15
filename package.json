@@ -34,7 +34,6 @@
   },
   "devDependencies": {
     "@nestjs/common": "^9",
-    "@nestjs/core": "^9",
     "@nestjs/platform-express": "^9",
     "@nestjs/testing": "^9.1.2",
     "@types/express": "^4.17.13",
@@ -58,12 +57,9 @@
   },
   "peerDependencies": {
     "@nestjs/common": "^9",
-    "@nestjs/core": "^9",
     "@nestjs/platform-express": "^9"
   },
   "dependencies": {
-    "utility-types": "^3.10.0",
-    "gc-json-logger": "^0.0.4",
-    "gc-json-logger-express": "^0.0.6"
+    "gc-json-logger-express": "^0.0.7"
   }
 }

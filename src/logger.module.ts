@@ -13,6 +13,8 @@ export class LoggerModule extends ConfigurableModuleClass implements NestModule 
   }
 
   configure(consumer: MiddlewareConsumer) {
-    this.options.configure(consumer.apply(LoggerMiddleware));
+    const config = consumer.apply(LoggerMiddleware);
+    if (this.options.excludedRoutes) config.exclude(...this.options.excludedRoutes);
+    config.forRoutes(...this.options.routes);
   }
 }

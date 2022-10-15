@@ -18,6 +18,9 @@ class TestController {
     this.logger.info('received data', { echo });
     return { ...echo };
   }
+
+  @Post('/ignore')
+  ignore() {}
 }
 
 describe('LoggerModule', () => {
@@ -27,7 +30,8 @@ describe('LoggerModule', () => {
     const moduleRef = await Test.createTestingModule({
       imports: [
         LoggerModule.register({
-          configure: (middleware) => middleware.forRoutes('*'),
+          routes: ['*'],
+          excludedRoutes: ['/ignore'],
         }),
       ],
       controllers: [TestController],
@@ -49,5 +53,12 @@ describe('LoggerModule', () => {
       .set('referer', 'https://example.com/')
       .send({ message: 'test' });
     expect(log.mock.calls).toMatchSnapshot();
+  });
+
+  it('ignores excluded routes', async () => {
+    const log = jest.spyOn(Logger.prototype, 'log');
+    log.mockImplementation(() => {});
+    await request(app.getHttpServer()).post('/ignore');
+    expect(log).not.toHaveBeenCalled();
   });
 });

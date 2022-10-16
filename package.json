@@ -1,6 +1,6 @@
 {
   "name": "gc-json-logger-nestjs",
-  "description": "Enables structured logging for Nest.js application running in Google Cloud platform.",
+  "description": "Enables structured logging for Nest.js application running in Google Cloud platform",
   "version": "0.0.0",
   "homepage": "https://github.com/igrek8/gc-json-logger-nestjs#readme",
   "author": "Igor Korchagin (https://github.com/igrek8)",
@@ -9,7 +9,7 @@
     "api",
     "nest.js",
     "logging",
-    "google-cloud"
+    "tracing"
   ],
   "repository": {
     "type": "git",
@@ -30,7 +30,8 @@
     "watch": "tsc --watch --project ./tsconfig.build.json",
     "build": "npm run clean && npm run compile",
     "lint": "eslint \"**/*\"",
-    "format": "prettier --check \"**/*\""
+    "format": "prettier --check \"**/*\"",
+    "start": "npm start --prefix ./demo"
   },
   "devDependencies": {
     "@nestjs/common": "^9",

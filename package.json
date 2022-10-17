@@ -64,6 +64,6 @@
   },
   "dependencies": {
     "gc-json-logger": "^0.0.4",
-    "gc-json-logger-express": "^0.0.7"
+    "gc-json-logger-express": "^0.0.8"
   }
 }

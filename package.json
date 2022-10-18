@@ -63,7 +63,7 @@
     "@nestjs/platform-express": "^9"
   },
   "dependencies": {
-    "gc-json-logger": "^0.0.4",
-    "gc-json-logger-express": "^0.0.8"
+    "gc-json-logger": "^0.0.5",
+    "gc-json-logger-express": "^0.0.9"
   }
 }

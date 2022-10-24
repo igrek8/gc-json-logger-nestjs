@@ -48,7 +48,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "gc-json-logger": "^0.0.4",
-    "gc-json-logger-express": "^0.0.7",
+    "gc-json-logger-express": "^0.0.9",
     "jest": "^29.0.3",
     "prettier": "^2.7.1",
     "rimraf": "^3.0.2",

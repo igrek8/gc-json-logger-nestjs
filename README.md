@@ -3,7 +3,7 @@
 Enables structured logging for Nest.js application running in Google Cloud platform.
 
 [![NPM](https://badgen.net/npm/v/gc-json-logger-nestjs)](https://www.npmjs.com/gc-json-logger-nestjs)
-[![Health](https://coveralls.io/repos/github/igrek8/gc-json-logger-nestjs/badge.svg?branch=main)](https://coveralls.io/github/igrek8/gc-json-logger-nestjs?branch=main)
+[![Coverage](https://codecov.io/gh/igrek8/gc-json-logger-nestjs/branch/main/graph/badge.svg)](https://codecov.io/gh/igrek8/gc-json-logger-nestjs)
 ![Release](https://badgen.net/github/checks/igrek8/gc-json-logger-nestjs)
 ![License](https://badgen.net/github/license/igrek8/gc-json-logger-nestjs)
 
@@ -27,7 +27,7 @@ yarn add \
 
 ## View in Google Cloud Monitoring
 
-![Google Cloud Monitoring](./docs/images/google-cloud-logging.png)
+![Google Cloud Monitoring](./media/google-cloud-logging.png)
 
 ## [Usage](./demo)
 

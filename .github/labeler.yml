@@ -1,9 +1,9 @@
 version: 1
 labels:
-  - label: 'fix'
+  - label: 'fix 🔧'
     title: '^fix(\(.+\))?:.*'
 
-  - label: 'bug 🐞'
+  - label: 'bug 🐛'
     title: '^fix(\(.+\))?:.*'
 
   - label: 'chore 🧹'
@@ -15,5 +15,8 @@ labels:
   - label: 'feature ✨'
     title: '^feat(\(.+\))?:.*'
 
-  - label: 'refactor 🔧'
+  - label: 'refactor 🛠'
     title: '^refactor(\(.+\))?:.*'
+
+  - label: 'build 📦'
+    title: '^build(\(.+\))?:.*'

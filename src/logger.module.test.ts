@@ -1,7 +1,7 @@
 import { Body, Controller, HttpCode, INestApplication, Inject, Post } from '@nestjs/common';
 import { Test } from '@nestjs/testing';
 import { Logger } from 'gc-json-logger';
-import request from 'supertest';
+import * as request from 'supertest';
 import { LoggerModule } from './logger.module';
 import { LoggerService } from './logger.service';
 

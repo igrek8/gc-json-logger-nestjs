@@ -1,4 +1,4 @@
-name: Define labels
+name: flow-define-labels
 
 on:
   push:
@@ -7,14 +7,14 @@ on:
     paths:
       - .github/labels.yml
 
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 jobs:
-  define-labels:
-    name: Define labels
+  update-labels:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: micnncim/action-label-syncer@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           manifest: .github/labels.yml

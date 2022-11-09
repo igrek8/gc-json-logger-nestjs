@@ -1,8 +1,9 @@
-CODEOWNERS
-README.md
-yarn.lock
-docs/
+*.html
+*.md
+*.map
 LICENSE
+
+media/
 dist/
-node_modules/
 coverage/
+node_modules/

@@ -1,20 +1,19 @@
 {
   "compilerOptions": {
-    "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "target": "es2020",
+    "allowSyntheticDefaultImports": false,
+    "experimentalDecorators": true,
+    "target": "ESNext",
+    "resolveJsonModule": true,
     "module": "commonjs",
     "declaration": true,
+    "moduleResolution": "node",
     "declarationMap": true,
     "sourceMap": true,
     "outDir": "./dist",
     "importHelpers": true,
-    "esModuleInterop": true,
+    "esModuleInterop": false,
     "forceConsistentCasingInFileNames": true,
-    "allowJs": false,
-    "downlevelIteration": false,
-    "resolveJsonModule": true,
-    "moduleResolution": "Node",
     "strict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
@@ -32,9 +31,10 @@
     "noUncheckedIndexedAccess": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
-    "allowUnusedLabels": true,
-    "allowUnreachableCode": true,
-    "skipLibCheck": true
+    "allowUnusedLabels": false,
+    "allowUnreachableCode": false,
+    "skipLibCheck": true,
+    "useDefineForClassFields": false
   },
   "include": ["./src"]
 }

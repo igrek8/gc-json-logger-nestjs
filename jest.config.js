@@ -5,6 +5,10 @@ module.exports = {
   clearMocks: true,
   resetMocks: true,
   restoreMocks: true,
+  rootDir: './src',
+  coverageDirectory: '../coverage',
+  coveragePathIgnorePatterns: ['<rootDir>/index.ts', '__fixtures__', '__mocks__', 'index.ts', '.d.ts'],
+  collectCoverageFrom: ['<rootDir>/**/*.ts'],
   coverageThreshold: {
     global: {
       lines: 100,

@@ -2,15 +2,15 @@
   description: New functionality
   color: 1D76DB
 
-- name: fix
+- name: fix 🔧
   description: Something will be fixed
   color: 006B75
 
-- name: refactor 🔧
+- name: refactor 🛠
   description: Refactoring
   color: BFD4F2
 
-- name: bug 🐞
+- name: bug 🐛
   description: Something isn't working
   color: D93F0B
 
@@ -21,3 +21,7 @@
 - name: chore 🧹
   description: Improvement or clean up
   color: C5DEF5
+
+- name: build 📦
+  description: Changes to build
+  color: E6CF39

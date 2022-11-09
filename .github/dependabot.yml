@@ -3,10 +3,10 @@ updates:
   - directory: /
     package-ecosystem: npm
     schedule:
-      interval: weekly
+      interval: daily
     ignore:
       - dependency-name: '*'
         update-types: ['version-update:semver-major']
       - dependency-name: '@types/node'
     commit-message:
-      prefix: chore(deps)
+      prefix: build(deps)

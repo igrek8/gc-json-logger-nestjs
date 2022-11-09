@@ -26,4 +26,4 @@
 
 #### Defined in
 
-[src/constants.ts:1](https://github.com/igrek8/gc-json-logger-nestjs/blob/5ab2cfb/src/constants.ts#L1)
+[src/constants.ts:1](https://github.com/igrek8/gc-json-logger-nestjs/blob/a76d778/src/constants.ts#L1)

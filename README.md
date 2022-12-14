@@ -112,10 +112,6 @@ export class AppController {
     TracingModule.register({
       // specify which routes to trace
       routes: ['*'],
-      configure(id: string) {
-        // bind x-request-id with the logger
-        Logger.getLogger(id); // <- Important to call with a param to init a context logger
-      },
     }),
     LoggerModule.register({
       // specify which routes to log

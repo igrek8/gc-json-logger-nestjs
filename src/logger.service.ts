@@ -4,42 +4,42 @@ import { ILogger, LogEntryMetadata, Logger, Severity } from 'gc-json-logger';
 @Injectable()
 export class LoggerService implements ILogger {
   log(severity: Severity, message: string, meta?: LogEntryMetadata): void {
-    return Logger.getLogger().log(severity, message, meta);
+    return Logger.log(severity, message, meta);
   }
 
   default(message: string, meta?: LogEntryMetadata): void {
-    return Logger.getLogger().default(message, meta);
+    return Logger.default(message, meta);
   }
 
   debug(message: string, meta?: LogEntryMetadata): void {
-    return Logger.getLogger().debug(message, meta);
+    return Logger.debug(message, meta);
   }
 
   info(message: string, meta?: LogEntryMetadata): void {
-    return Logger.getLogger().info(message, meta);
+    return Logger.info(message, meta);
   }
 
   notice(message: string, meta?: LogEntryMetadata): void {
-    return Logger.getLogger().notice(message, meta);
+    return Logger.notice(message, meta);
   }
 
   warning(message: string, meta?: LogEntryMetadata): void {
-    return Logger.getLogger().warning(message, meta);
+    return Logger.warning(message, meta);
   }
 
   error(message: string, meta?: LogEntryMetadata): void {
-    return Logger.getLogger().error(message, meta);
+    return Logger.error(message, meta);
   }
 
   critical(message: string, meta?: LogEntryMetadata): void {
-    return Logger.getLogger().critical(message, meta);
+    return Logger.critical(message, meta);
   }
 
   alert(message: string, meta?: LogEntryMetadata): void {
-    return Logger.getLogger().alert(message, meta);
+    return Logger.alert(message, meta);
   }
 
   emergency(message: string, meta?: LogEntryMetadata): void {
-    return Logger.getLogger().emergency(message, meta);
+    return Logger.emergency(message, meta);
   }
 }

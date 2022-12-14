@@ -33,17 +33,17 @@ Nest.js compatible logger
 
 | Name | Type |
 | :------ | :------ |
-| `logger?` | `Logger` |
+| `logger` | `Logger` |
 
 #### Defined in
 
-[src/adapter-logger.service.ts:13](https://github.com/igrek8/gc-json-logger-nestjs/blob/e1322c4/src/adapter-logger.service.ts#L13)
+[src/adapter-logger.service.ts:13](https://github.com/igrek8/gc-json-logger-nestjs/blob/7eaec61/src/adapter-logger.service.ts#L13)
 
 ## Methods
 
 ### debug
 
-▸ **debug**(`message`, ...`optionalParams`): `void`
+▸ **debug**(`message`, `...optionalParams`): `void`
 
 #### Parameters
 
@@ -62,13 +62,13 @@ LoggerService.debug
 
 #### Defined in
 
-[src/adapter-logger.service.ts:59](https://github.com/igrek8/gc-json-logger-nestjs/blob/e1322c4/src/adapter-logger.service.ts#L59)
+[src/adapter-logger.service.ts:58](https://github.com/igrek8/gc-json-logger-nestjs/blob/7eaec61/src/adapter-logger.service.ts#L58)
 
 ___
 
 ### error
 
-▸ **error**(`message`, ...`optionalParams`): `void`
+▸ **error**(`message`, `...optionalParams`): `void`
 
 #### Parameters
 
@@ -87,13 +87,13 @@ LoggerService.error
 
 #### Defined in
 
-[src/adapter-logger.service.ts:41](https://github.com/igrek8/gc-json-logger-nestjs/blob/e1322c4/src/adapter-logger.service.ts#L41)
+[src/adapter-logger.service.ts:40](https://github.com/igrek8/gc-json-logger-nestjs/blob/7eaec61/src/adapter-logger.service.ts#L40)
 
 ___
 
 ### log
 
-▸ **log**(`message`, ...`optionalParams`): `void`
+▸ **log**(`message`, `...optionalParams`): `void`
 
 #### Parameters
 
@@ -112,7 +112,7 @@ LoggerService.log
 
 #### Defined in
 
-[src/adapter-logger.service.ts:47](https://github.com/igrek8/gc-json-logger-nestjs/blob/e1322c4/src/adapter-logger.service.ts#L47)
+[src/adapter-logger.service.ts:46](https://github.com/igrek8/gc-json-logger-nestjs/blob/7eaec61/src/adapter-logger.service.ts#L46)
 
 ___
 
@@ -136,13 +136,13 @@ LoggerService.setLogLevels
 
 #### Defined in
 
-[src/adapter-logger.service.ts:71](https://github.com/igrek8/gc-json-logger-nestjs/blob/e1322c4/src/adapter-logger.service.ts#L71)
+[src/adapter-logger.service.ts:70](https://github.com/igrek8/gc-json-logger-nestjs/blob/7eaec61/src/adapter-logger.service.ts#L70)
 
 ___
 
 ### verbose
 
-▸ **verbose**(`message`, ...`optionalParams`): `void`
+▸ **verbose**(`message`, `...optionalParams`): `void`
 
 #### Parameters
 
@@ -161,13 +161,13 @@ LoggerService.verbose
 
 #### Defined in
 
-[src/adapter-logger.service.ts:65](https://github.com/igrek8/gc-json-logger-nestjs/blob/e1322c4/src/adapter-logger.service.ts#L65)
+[src/adapter-logger.service.ts:64](https://github.com/igrek8/gc-json-logger-nestjs/blob/7eaec61/src/adapter-logger.service.ts#L64)
 
 ___
 
 ### warn
 
-▸ **warn**(`message`, ...`optionalParams`): `void`
+▸ **warn**(`message`, `...optionalParams`): `void`
 
 #### Parameters
 
@@ -186,4 +186,4 @@ LoggerService.warn
 
 #### Defined in
 
-[src/adapter-logger.service.ts:53](https://github.com/igrek8/gc-json-logger-nestjs/blob/e1322c4/src/adapter-logger.service.ts#L53)
+[src/adapter-logger.service.ts:52](https://github.com/igrek8/gc-json-logger-nestjs/blob/7eaec61/src/adapter-logger.service.ts#L52)

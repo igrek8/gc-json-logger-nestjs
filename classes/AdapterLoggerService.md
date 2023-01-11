@@ -37,7 +37,7 @@ Nest.js compatible logger
 
 #### Defined in
 
-[src/adapter-logger.service.ts:13](https://github.com/igrek8/gc-json-logger-nestjs/blob/7eaec61/src/adapter-logger.service.ts#L13)
+[src/adapter-logger.service.ts:13](https://github.com/igrek8/gc-json-logger-nestjs/blob/a0380bd/src/adapter-logger.service.ts#L13)
 
 ## Methods
 
@@ -62,7 +62,7 @@ LoggerService.debug
 
 #### Defined in
 
-[src/adapter-logger.service.ts:58](https://github.com/igrek8/gc-json-logger-nestjs/blob/7eaec61/src/adapter-logger.service.ts#L58)
+[src/adapter-logger.service.ts:58](https://github.com/igrek8/gc-json-logger-nestjs/blob/a0380bd/src/adapter-logger.service.ts#L58)
 
 ___
 
@@ -87,7 +87,7 @@ LoggerService.error
 
 #### Defined in
 
-[src/adapter-logger.service.ts:40](https://github.com/igrek8/gc-json-logger-nestjs/blob/7eaec61/src/adapter-logger.service.ts#L40)
+[src/adapter-logger.service.ts:40](https://github.com/igrek8/gc-json-logger-nestjs/blob/a0380bd/src/adapter-logger.service.ts#L40)
 
 ___
 
@@ -112,7 +112,7 @@ LoggerService.log
 
 #### Defined in
 
-[src/adapter-logger.service.ts:46](https://github.com/igrek8/gc-json-logger-nestjs/blob/7eaec61/src/adapter-logger.service.ts#L46)
+[src/adapter-logger.service.ts:46](https://github.com/igrek8/gc-json-logger-nestjs/blob/a0380bd/src/adapter-logger.service.ts#L46)
 
 ___
 
@@ -136,7 +136,7 @@ LoggerService.setLogLevels
 
 #### Defined in
 
-[src/adapter-logger.service.ts:70](https://github.com/igrek8/gc-json-logger-nestjs/blob/7eaec61/src/adapter-logger.service.ts#L70)
+[src/adapter-logger.service.ts:70](https://github.com/igrek8/gc-json-logger-nestjs/blob/a0380bd/src/adapter-logger.service.ts#L70)
 
 ___
 
@@ -161,7 +161,7 @@ LoggerService.verbose
 
 #### Defined in
 
-[src/adapter-logger.service.ts:64](https://github.com/igrek8/gc-json-logger-nestjs/blob/7eaec61/src/adapter-logger.service.ts#L64)
+[src/adapter-logger.service.ts:64](https://github.com/igrek8/gc-json-logger-nestjs/blob/a0380bd/src/adapter-logger.service.ts#L64)
 
 ___
 
@@ -186,4 +186,4 @@ LoggerService.warn
 
 #### Defined in
 
-[src/adapter-logger.service.ts:52](https://github.com/igrek8/gc-json-logger-nestjs/blob/7eaec61/src/adapter-logger.service.ts#L52)
+[src/adapter-logger.service.ts:52](https://github.com/igrek8/gc-json-logger-nestjs/blob/a0380bd/src/adapter-logger.service.ts#L52)

@@ -42,4 +42,12 @@ export class LoggerService implements ILogger {
   emergency(message: string, meta?: LogEntryMetadata): void {
     return Logger.emergency(message, meta);
   }
+
+  setLabels(labels: Record<string, string | undefined>): void {
+    return Logger.getLogger().setLabels(labels);
+  }
+
+  getLabels(): Record<string, string | undefined> {
+    return Logger.getLogger().getLabels();
+  }
 }

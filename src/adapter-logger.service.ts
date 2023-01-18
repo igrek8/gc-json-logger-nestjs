@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import { Injectable, LoggerService, LogLevel, Optional } from '@nestjs/common';
+import { Injectable, LoggerService, LogLevel } from '@nestjs/common';
 import { LogEntryMetadata, Logger } from 'gc-json-logger';
 
 /**
@@ -9,8 +9,6 @@ import { LogEntryMetadata, Logger } from 'gc-json-logger';
 @Injectable()
 export class AdapterLoggerService implements LoggerService {
   protected logLevels = new Set<LogLevel>(['log', 'warn', 'error']);
-
-  constructor(@Optional() protected readonly logger: Logger = Logger.getLogger()) {}
 
   protected write(channel: 'default' | 'debug' | 'info' | 'warning' | 'error', message: any, ...optionalParams: any[]) {
     let meta: LogEntryMetadata = {};
@@ -34,7 +32,8 @@ export class AdapterLoggerService implements LoggerService {
       meta['args'] = optionalParams;
     }
 
-    this.logger[channel](message, meta);
+    const logger = Logger.getLogger();
+    logger[channel](message, meta);
   }
 
   error(message: any, ...optionalParams: [...any, string?, string?]) {

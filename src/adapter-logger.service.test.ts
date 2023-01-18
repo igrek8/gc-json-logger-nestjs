@@ -7,7 +7,7 @@ describe('AdapterLoggerService', () => {
     log.mockImplementation(() => {});
     const error = expect.objectContaining({ message: 'error', stack: 'stack' });
 
-    const logger = new AdapterLoggerService(Logger.getLogger());
+    const logger = new AdapterLoggerService();
     logger.setLogLevels?.(['verbose', 'debug', 'log', 'warn', 'error']);
 
     logger.verbose?.('verbose', 'context');
@@ -26,7 +26,7 @@ describe('AdapterLoggerService', () => {
   it('supports gc-json-logger signature', () => {
     const log = jest.spyOn(Logger.prototype, 'log');
     log.mockImplementation(() => {});
-    const logger = new AdapterLoggerService(Logger.getLogger());
+    const logger = new AdapterLoggerService();
     const error = expect.objectContaining({ message: 'error', stack: 'stack' });
     logger.error('error', { error });
     expect(log).toHaveBeenCalledWith(Severity.ERROR, 'error', { error });

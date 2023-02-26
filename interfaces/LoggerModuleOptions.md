@@ -18,7 +18,7 @@
 
 #### Defined in
 
-[src/logger.module-options.ts:7](https://github.com/igrek8/gc-json-logger-nestjs/blob/d406577/src/logger.module-options.ts#L7)
+[src/logger.module-options.ts:7](https://github.com/igrek8/gc-json-logger-nestjs/blob/47e27da/src/logger.module-options.ts#L7)
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 #### Defined in
 
-[src/logger.module-options.ts:6](https://github.com/igrek8/gc-json-logger-nestjs/blob/d406577/src/logger.module-options.ts#L6)
+[src/logger.module-options.ts:6](https://github.com/igrek8/gc-json-logger-nestjs/blob/47e27da/src/logger.module-options.ts#L6)
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 #### Defined in
 
-[src/logger.module-options.ts:5](https://github.com/igrek8/gc-json-logger-nestjs/blob/d406577/src/logger.module-options.ts#L5)
+[src/logger.module-options.ts:5](https://github.com/igrek8/gc-json-logger-nestjs/blob/47e27da/src/logger.module-options.ts#L5)

@@ -17,6 +17,3 @@ labels:
 
   - label: 'refactor 🛠'
     title: '^refactor(\(.+\))?:.*'
-
-  - label: 'build 📦'
-    title: '^build(\(.+\))?:.*'

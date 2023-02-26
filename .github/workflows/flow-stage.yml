@@ -1,12 +1,12 @@
-name: flow-pr
+name: flow-stage
 
-on: pull_request
+on:
+  push:
+    branches: [main]
 
 jobs:
-  check-title:
-    uses: igrek8/github-workflows/.github/workflows/job-check-title.yml@main
-  add-labels:
-    uses: igrek8/github-workflows/.github/workflows/job-add-labels.yml@main
+  define-labels:
+    uses: igrek8/github-workflows/.github/workflows/job-define-labels.yml@main
   format:
     uses: igrek8/github-workflows/.github/workflows/job-format.yml@main
   lint:
@@ -21,3 +21,14 @@ jobs:
     uses: igrek8/github-workflows/.github/workflows/job-security.yml@main
     secrets:
       SPECTRAL_DSN: ${{ secrets.SPECTRAL_DSN }}
+  release:
+    needs: [define-labels, format, lint, test, build, analyze, security]
+    uses: igrek8/github-workflows/.github/workflows/job-release.yml@main
+    with:
+      artifact-name: dist
+      artifact-path: dist
+    secrets:
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+  docs:
+    needs: [release]
+    uses: igrek8/github-workflows/.github/workflows/job-docs.yml@main

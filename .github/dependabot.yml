@@ -4,9 +4,3 @@ updates:
     package-ecosystem: npm
     schedule:
       interval: daily
-    ignore:
-      - dependency-name: '*'
-        update-types: ['version-update:semver-major']
-      - dependency-name: '@types/node'
-    commit-message:
-      prefix: build(deps)

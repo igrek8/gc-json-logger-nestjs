@@ -21,7 +21,3 @@
 - name: chore 🧹
   description: Improvement or clean up
   color: C5DEF5
-
-- name: build 📦
-  description: Changes to build
-  color: E6CF39

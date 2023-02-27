@@ -73,7 +73,7 @@
     "@igrek8/prettier": "1.0.1",
     "@igrek8/semantic-release": "1.0.2",
     "@igrek8/typescript": "1.0.1",
-    "@igrek8/typedoc": "1.0.1",
+    "@igrek8/typedoc": "1.1.1",
     "@nestjs/common": "9.3.9",
     "@nestjs/core": "9.3.9",
     "@nestjs/platform-express": "9.3.9",

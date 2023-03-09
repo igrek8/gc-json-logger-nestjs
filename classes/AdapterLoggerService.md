@@ -52,7 +52,7 @@ LoggerService.debug
 
 #### Defined in
 
-[src/adapter-logger.service.ts:57](https://github.com/igrek8/gc-json-logger-nestjs/blob/3fa2119/src/adapter-logger.service.ts#L57)
+[src/adapter-logger.service.ts:57](https://github.com/igrek8/gc-json-logger-nestjs/blob/3222a8a/src/adapter-logger.service.ts#L57)
 
 ___
 
@@ -77,7 +77,7 @@ LoggerService.error
 
 #### Defined in
 
-[src/adapter-logger.service.ts:39](https://github.com/igrek8/gc-json-logger-nestjs/blob/3fa2119/src/adapter-logger.service.ts#L39)
+[src/adapter-logger.service.ts:39](https://github.com/igrek8/gc-json-logger-nestjs/blob/3222a8a/src/adapter-logger.service.ts#L39)
 
 ___
 
@@ -102,7 +102,7 @@ LoggerService.log
 
 #### Defined in
 
-[src/adapter-logger.service.ts:45](https://github.com/igrek8/gc-json-logger-nestjs/blob/3fa2119/src/adapter-logger.service.ts#L45)
+[src/adapter-logger.service.ts:45](https://github.com/igrek8/gc-json-logger-nestjs/blob/3222a8a/src/adapter-logger.service.ts#L45)
 
 ___
 
@@ -126,7 +126,7 @@ LoggerService.setLogLevels
 
 #### Defined in
 
-[src/adapter-logger.service.ts:69](https://github.com/igrek8/gc-json-logger-nestjs/blob/3fa2119/src/adapter-logger.service.ts#L69)
+[src/adapter-logger.service.ts:69](https://github.com/igrek8/gc-json-logger-nestjs/blob/3222a8a/src/adapter-logger.service.ts#L69)
 
 ___
 
@@ -151,7 +151,7 @@ LoggerService.verbose
 
 #### Defined in
 
-[src/adapter-logger.service.ts:63](https://github.com/igrek8/gc-json-logger-nestjs/blob/3fa2119/src/adapter-logger.service.ts#L63)
+[src/adapter-logger.service.ts:63](https://github.com/igrek8/gc-json-logger-nestjs/blob/3222a8a/src/adapter-logger.service.ts#L63)
 
 ___
 
@@ -176,4 +176,4 @@ LoggerService.warn
 
 #### Defined in
 
-[src/adapter-logger.service.ts:51](https://github.com/igrek8/gc-json-logger-nestjs/blob/3fa2119/src/adapter-logger.service.ts#L51)
+[src/adapter-logger.service.ts:51](https://github.com/igrek8/gc-json-logger-nestjs/blob/3222a8a/src/adapter-logger.service.ts#L51)

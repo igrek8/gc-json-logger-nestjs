@@ -81,7 +81,7 @@
     "@igrek8/typedoc": "1.1.2",
     "@nestjs/common": "9.3.11",
     "@nestjs/core": "9.3.11",
-    "@nestjs/platform-express": "9.3.10",
+    "@nestjs/platform-express": "9.3.11",
     "@nestjs/swagger": "6.2.1",
     "@nestjs/testing": "9.3.11",
     "@types/express": "4.17.17",

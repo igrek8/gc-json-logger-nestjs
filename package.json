@@ -79,7 +79,7 @@
     "@igrek8/semantic-release-config": "1.0.11",
     "@igrek8/tsconfig": "1.0.11",
     "@igrek8/typedoc": "1.1.2",
-    "@nestjs/common": "10.0.4",
+    "@nestjs/common": "10.0.5",
     "@nestjs/core": "10.0.4",
     "@nestjs/platform-express": "10.0.4",
     "@nestjs/swagger": "7.0.12",

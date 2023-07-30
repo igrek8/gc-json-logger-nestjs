@@ -1,7 +1,12 @@
+import { Injectable, Optional } from '@nestjs/common';
 import { Logger as ContextLogger, ILogger, LogEntryMetadata, Severity } from 'gc-json-logger';
 
+@Injectable()
 export class Logger implements ILogger {
-  constructor(protected context?: string, protected labels: Record<string, string | undefined> = {}) {}
+  constructor(
+    @Optional() protected context?: string,
+    @Optional() protected labels: Record<string, string | undefined> = {}
+  ) {}
 
   log(severity: Severity, message: string, meta?: LogEntryMetadata | undefined): void {
     ContextLogger.log(severity, message, {

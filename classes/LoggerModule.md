@@ -49,7 +49,7 @@ NestModule.configure
 
 #### Defined in
 
-[src/logger.module.ts:11](https://github.com/igrek8/gc-json-logger-nestjs/blob/b1f7ddb/src/logger.module.ts#L11)
+[src/logger.module.ts:15](https://github.com/igrek8/gc-json-logger-nestjs/blob/2960b22/src/logger.module.ts#L15)
 
 ## Constructors
 
@@ -69,7 +69,7 @@ ConfigurableModuleClass.constructor
 
 #### Defined in
 
-[src/logger.module.ts:7](https://github.com/igrek8/gc-json-logger-nestjs/blob/b1f7ddb/src/logger.module.ts#L7)
+[src/logger.module.ts:11](https://github.com/igrek8/gc-json-logger-nestjs/blob/2960b22/src/logger.module.ts#L11)
 
 ## Properties
 

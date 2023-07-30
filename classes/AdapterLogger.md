@@ -1,6 +1,6 @@
-[gc-json-logger-nestjs](../README.md) / [Exports](../modules.md) / AdapterLoggerService
+[gc-json-logger-nestjs](../README.md) / [Exports](../modules.md) / AdapterLogger
 
-# Class: AdapterLoggerService
+# Class: AdapterLogger
 
 Nest.js compatible logger
 
@@ -12,22 +12,22 @@ Nest.js compatible logger
 
 ### Constructors
 
-- [constructor](AdapterLoggerService.md#constructor)
+- [constructor](AdapterLogger.md#constructor)
 
 ### Methods
 
-- [debug](AdapterLoggerService.md#debug)
-- [error](AdapterLoggerService.md#error)
-- [log](AdapterLoggerService.md#log)
-- [setLogLevels](AdapterLoggerService.md#setloglevels)
-- [verbose](AdapterLoggerService.md#verbose)
-- [warn](AdapterLoggerService.md#warn)
+- [debug](AdapterLogger.md#debug)
+- [error](AdapterLogger.md#error)
+- [log](AdapterLogger.md#log)
+- [setLogLevels](AdapterLogger.md#setloglevels)
+- [verbose](AdapterLogger.md#verbose)
+- [warn](AdapterLogger.md#warn)
 
 ## Constructors
 
 ### constructor
 
-• **new AdapterLoggerService**()
+• **new AdapterLogger**()
 
 ## Methods
 
@@ -52,7 +52,7 @@ LoggerService.debug
 
 #### Defined in
 
-[src/adapter-logger.service.ts:57](https://github.com/igrek8/gc-json-logger-nestjs/blob/1ae0acb/src/adapter-logger.service.ts#L57)
+[src/adapter-logger.ts:56](https://github.com/igrek8/gc-json-logger-nestjs/blob/b1f7ddb/src/adapter-logger.ts#L56)
 
 ___
 
@@ -77,7 +77,7 @@ LoggerService.error
 
 #### Defined in
 
-[src/adapter-logger.service.ts:39](https://github.com/igrek8/gc-json-logger-nestjs/blob/1ae0acb/src/adapter-logger.service.ts#L39)
+[src/adapter-logger.ts:38](https://github.com/igrek8/gc-json-logger-nestjs/blob/b1f7ddb/src/adapter-logger.ts#L38)
 
 ___
 
@@ -102,7 +102,7 @@ LoggerService.log
 
 #### Defined in
 
-[src/adapter-logger.service.ts:45](https://github.com/igrek8/gc-json-logger-nestjs/blob/1ae0acb/src/adapter-logger.service.ts#L45)
+[src/adapter-logger.ts:44](https://github.com/igrek8/gc-json-logger-nestjs/blob/b1f7ddb/src/adapter-logger.ts#L44)
 
 ___
 
@@ -126,7 +126,7 @@ LoggerService.setLogLevels
 
 #### Defined in
 
-[src/adapter-logger.service.ts:69](https://github.com/igrek8/gc-json-logger-nestjs/blob/1ae0acb/src/adapter-logger.service.ts#L69)
+[src/adapter-logger.ts:68](https://github.com/igrek8/gc-json-logger-nestjs/blob/b1f7ddb/src/adapter-logger.ts#L68)
 
 ___
 
@@ -151,7 +151,7 @@ LoggerService.verbose
 
 #### Defined in
 
-[src/adapter-logger.service.ts:63](https://github.com/igrek8/gc-json-logger-nestjs/blob/1ae0acb/src/adapter-logger.service.ts#L63)
+[src/adapter-logger.ts:62](https://github.com/igrek8/gc-json-logger-nestjs/blob/b1f7ddb/src/adapter-logger.ts#L62)
 
 ___
 
@@ -176,4 +176,4 @@ LoggerService.warn
 
 #### Defined in
 
-[src/adapter-logger.service.ts:51](https://github.com/igrek8/gc-json-logger-nestjs/blob/1ae0acb/src/adapter-logger.service.ts#L51)
+[src/adapter-logger.ts:50](https://github.com/igrek8/gc-json-logger-nestjs/blob/b1f7ddb/src/adapter-logger.ts#L50)

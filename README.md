@@ -1,6 +1,6 @@
 gc-json-logger-nestjs / [Exports](modules.md)
 
-# [Structured logging](https://cloud.google.com/logging/docs/structured-logging) for Nest.js (Express.js) application in GKE
+# Logger for [Structured Logging](https://cloud.google.com/logging/docs/structured-logging) with [Asynchronous Context Tracking](https://nodejs.org/api/async_context.html#class-asynclocalstorage) (Stability: 2 - Stable) to log HTTP traffic in Nest.JS (Express.JS) in GKE
 
 Enables structured logging for Nest.js application running in Google Cloud platform.
 
@@ -8,10 +8,6 @@ Enables structured logging for Nest.js application running in Google Cloud platf
 [![Coverage](https://codecov.io/gh/igrek8/gc-json-logger-nestjs/branch/main/graph/badge.svg)](https://codecov.io/gh/igrek8/gc-json-logger-nestjs)
 ![Release](https://badgen.net/github/checks/igrek8/gc-json-logger-nestjs)
 ![License](https://badgen.net/github/license/igrek8/gc-json-logger-nestjs)
-
-## Precaution
-
-The logger makes use of [`async_hooks`](https://nodejs.org/api/async_hooks.html#async-hooks) module which is currently **experimental**. However, the use of `async_hooks` mechanism was at basic.
 
 ## Installation
 
@@ -35,10 +31,10 @@ yarn add \
 
 ### [Demo](./demo)
 
-- [./main.ts](./demo/main.ts)
-- [./demo.module.ts](./demo/demo.module.ts)
-- [./demo.controller.ts](./demo/demo.controller.ts)
-- [./demo.controller.test.ts](./demo/demo.controller.test.ts)
+- [./main.ts](./src/demo/main.ts)
+- [./demo.module.ts](./src/demo/demo.module.ts)
+- [./demo.controller.ts](./src/demo/demo.controller.ts)
+- [./demo.controller.test.ts](./src/demo/demo.controller.test.ts)
 
 ### Shell
 

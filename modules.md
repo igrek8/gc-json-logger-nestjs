@@ -4,26 +4,12 @@
 
 ## Table of contents
 
-### Variables
-
-- [APP\_LOGGER](modules.md#app_logger)
-
 ### Classes
 
-- [AdapterLoggerService](classes/AdapterLoggerService.md)
+- [AdapterLogger](classes/AdapterLogger.md)
+- [Logger](classes/Logger.md)
 - [LoggerModule](classes/LoggerModule.md)
-- [LoggerService](classes/LoggerService.md)
 
 ### Interfaces
 
 - [LoggerModuleOptions](interfaces/LoggerModuleOptions.md)
-
-## Variables
-
-### APP\_LOGGER
-
-• `Const` **APP\_LOGGER**: ``"APP_LOGGER"``
-
-#### Defined in
-
-[src/constants.ts:1](https://github.com/igrek8/gc-json-logger-nestjs/blob/1ae0acb/src/constants.ts#L1)

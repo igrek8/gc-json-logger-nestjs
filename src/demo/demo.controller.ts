@@ -1,10 +1,10 @@
 import { Controller, Post } from '@nestjs/common';
 import { Trace } from 'trace-nestjs';
-import { LoggerService } from '../src';
+import { Logger } from '../';
 
 @Controller()
 export class DemoController {
-  constructor(protected readonly logger: LoggerService) {}
+  protected readonly logger = new Logger(DemoController.name);
 
   @Post('/')
   @Trace() // add swagger header definition

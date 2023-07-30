@@ -1,20 +1,19 @@
-import { LoggerService } from '../src';
+import { Logger } from '../';
 import { DemoController } from './demo.controller';
 
-jest.mock('gc-json-logger'); // prevents writes to stdout
+// prevents writes to stdout
+jest.mock('gc-json-logger');
 
 describe('DemoController', () => {
-  let logger: LoggerService;
   let controller: DemoController;
 
   beforeEach(() => {
-    logger = new LoggerService();
-    controller = new DemoController(logger);
+    controller = new DemoController();
   });
 
   describe('handler', () => {
     it('should return a string', async () => {
-      const info = jest.spyOn(logger, 'info');
+      const info = jest.spyOn(Logger.prototype, 'info');
       expect(controller.handler()).toBe('Hello world!');
       expect(info).toHaveBeenCalledWith('This is a log message!');
     });

@@ -1,13 +1,13 @@
 import { Logger, Severity } from 'gc-json-logger';
-import { AdapterLoggerService } from './adapter-logger.service';
+import { AdapterLogger } from './adapter-logger';
 
-describe('AdapterLoggerService', () => {
+describe('AdapterLogger', () => {
   it('is compatible with nest.js logger interface', () => {
     const log = jest.spyOn(Logger.prototype, 'log');
     log.mockImplementation(() => {});
     const error = expect.objectContaining({ message: 'error', stack: 'stack' });
 
-    const logger = new AdapterLoggerService();
+    const logger = new AdapterLogger();
     logger.setLogLevels?.(['verbose', 'debug', 'log', 'warn', 'error']);
 
     logger.verbose?.('verbose', 'context');
@@ -26,7 +26,7 @@ describe('AdapterLoggerService', () => {
   it('supports gc-json-logger signature', () => {
     const log = jest.spyOn(Logger.prototype, 'log');
     log.mockImplementation(() => {});
-    const logger = new AdapterLoggerService();
+    const logger = new AdapterLogger();
     const error = expect.objectContaining({ message: 'error', stack: 'stack' });
     logger.error('error', { error });
     expect(log).toHaveBeenCalledWith(Severity.ERROR, 'error', { error });
@@ -35,7 +35,7 @@ describe('AdapterLoggerService', () => {
   it('handles unknown cases', () => {
     const log = jest.spyOn(Logger.prototype, 'log');
     log.mockImplementation(() => {});
-    const logger = new AdapterLoggerService();
+    const logger = new AdapterLogger();
     logger.log({ message: 'test' }, [1], { data: true });
     expect(log).toHaveBeenCalledWith(Severity.INFO, { message: 'test' }, { args: [[1], { data: true }] });
   });

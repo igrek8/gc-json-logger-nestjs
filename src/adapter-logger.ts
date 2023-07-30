@@ -1,13 +1,12 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import { Injectable, LoggerService, LogLevel } from '@nestjs/common';
+import { LoggerService, LogLevel } from '@nestjs/common';
 import { LogEntryMetadata, Logger } from 'gc-json-logger';
 
 /**
  * Nest.js compatible logger
  */
-@Injectable()
-export class AdapterLoggerService implements LoggerService {
+export class AdapterLogger implements LoggerService {
   protected logLevels = new Set<LogLevel>(['log', 'warn', 'error']);
 
   protected write(channel: 'default' | 'debug' | 'info' | 'warning' | 'error', message: any, ...optionalParams: any[]) {
@@ -36,31 +35,31 @@ export class AdapterLoggerService implements LoggerService {
     logger[channel](message, meta);
   }
 
-  error(message: any, ...optionalParams: [...any, string?, string?]) {
+  error(message: any, ...optionalParams: any[]) {
     if (this.logLevels.has('error')) {
       this.write('error', message, ...optionalParams);
     }
   }
 
-  log(message: any, ...optionalParams: [...any, string?]): void {
+  log(message: any, ...optionalParams: any[]): void {
     if (this.logLevels.has('log')) {
       this.write('info', message, ...optionalParams);
     }
   }
 
-  warn(message: any, ...optionalParams: [...any, string?]): void {
+  warn(message: any, ...optionalParams: any[]): void {
     if (this.logLevels.has('warn')) {
       this.write('warning', message, ...optionalParams);
     }
   }
 
-  debug(message: any, ...optionalParams: [...any, string?]): void {
+  debug(message: any, ...optionalParams: any[]): void {
     if (this.logLevels.has('debug')) {
       this.write('debug', message, ...optionalParams);
     }
   }
 
-  verbose(message: any, ...optionalParams: [...any, string?]) {
+  verbose(message: any, ...optionalParams: any[]) {
     if (this.logLevels.has('verbose')) {
       this.write('default', message, ...optionalParams);
     }

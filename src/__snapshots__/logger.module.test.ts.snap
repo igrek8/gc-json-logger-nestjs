@@ -6,9 +6,11 @@ exports[`LoggerModule logs a request 1`] = `
     200,
     "received data",
     {
+      "context": "TestController",
       "echo": {
         "message": "test",
       },
+      "labels": {},
     },
   ],
   [

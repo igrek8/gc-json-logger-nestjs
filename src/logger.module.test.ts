@@ -1,16 +1,16 @@
-import { Body, Controller, HttpCode, INestApplication, Inject, Post } from '@nestjs/common';
+import { Body, Controller, HttpCode, INestApplication, Post } from '@nestjs/common';
 import { Test } from '@nestjs/testing';
-import { Logger } from 'gc-json-logger';
 import * as request from 'supertest';
+import { Logger as ContextLogger } from 'gc-json-logger';
 import { LoggerModule } from './logger.module';
-import { LoggerService } from './logger.service';
+import { Logger } from './logger';
 
 jest.useFakeTimers();
 jest.setSystemTime(0);
 
 @Controller()
 class TestController {
-  constructor(@Inject(LoggerService) protected readonly logger: LoggerService) {}
+  protected readonly logger = new Logger(TestController.name);
 
   @Post('/echo')
   @HttpCode(200)
@@ -45,7 +45,7 @@ describe('LoggerModule', () => {
   });
 
   it('logs a request', async () => {
-    const log = jest.spyOn(Logger.prototype, 'log');
+    const log = jest.spyOn(ContextLogger.prototype, 'log');
     log.mockImplementation(() => {});
     await request(app.getHttpServer())
       .post('/echo')
@@ -56,7 +56,7 @@ describe('LoggerModule', () => {
   });
 
   it('ignores excluded routes', async () => {
-    const log = jest.spyOn(Logger.prototype, 'log');
+    const log = jest.spyOn(ContextLogger.prototype, 'log');
     log.mockImplementation(() => {});
     await request(app.getHttpServer()).post('/ignore');
     expect(log).not.toHaveBeenCalled();

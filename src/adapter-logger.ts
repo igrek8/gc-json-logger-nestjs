@@ -1,11 +1,12 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import { LoggerService, LogLevel } from '@nestjs/common';
+import { Injectable, LoggerService, LogLevel } from '@nestjs/common';
 import { LogEntryMetadata, Logger } from 'gc-json-logger';
 
 /**
  * Nest.js compatible logger
  */
+@Injectable()
 export class AdapterLogger implements LoggerService {
   protected logLevels = new Set<LogLevel>(['log', 'warn', 'error']);
 

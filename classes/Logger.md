@@ -51,7 +51,7 @@ ILogger.alert
 
 #### Defined in
 
-[src/logger.ts:75](https://github.com/igrek8/gc-json-logger-nestjs/blob/2960b22/src/logger.ts#L75)
+[src/logger.ts:75](https://github.com/igrek8/gc-json-logger-nestjs/blob/2cea8d0/src/logger.ts#L75)
 
 ___
 
@@ -76,7 +76,7 @@ ILogger.critical
 
 #### Defined in
 
-[src/logger.ts:67](https://github.com/igrek8/gc-json-logger-nestjs/blob/2960b22/src/logger.ts#L67)
+[src/logger.ts:67](https://github.com/igrek8/gc-json-logger-nestjs/blob/2cea8d0/src/logger.ts#L67)
 
 ___
 
@@ -101,7 +101,7 @@ ILogger.debug
 
 #### Defined in
 
-[src/logger.ts:27](https://github.com/igrek8/gc-json-logger-nestjs/blob/2960b22/src/logger.ts#L27)
+[src/logger.ts:27](https://github.com/igrek8/gc-json-logger-nestjs/blob/2cea8d0/src/logger.ts#L27)
 
 ___
 
@@ -126,7 +126,7 @@ ILogger.default
 
 #### Defined in
 
-[src/logger.ts:19](https://github.com/igrek8/gc-json-logger-nestjs/blob/2960b22/src/logger.ts#L19)
+[src/logger.ts:19](https://github.com/igrek8/gc-json-logger-nestjs/blob/2cea8d0/src/logger.ts#L19)
 
 ___
 
@@ -151,7 +151,7 @@ ILogger.emergency
 
 #### Defined in
 
-[src/logger.ts:83](https://github.com/igrek8/gc-json-logger-nestjs/blob/2960b22/src/logger.ts#L83)
+[src/logger.ts:83](https://github.com/igrek8/gc-json-logger-nestjs/blob/2cea8d0/src/logger.ts#L83)
 
 ___
 
@@ -176,7 +176,7 @@ ILogger.error
 
 #### Defined in
 
-[src/logger.ts:59](https://github.com/igrek8/gc-json-logger-nestjs/blob/2960b22/src/logger.ts#L59)
+[src/logger.ts:59](https://github.com/igrek8/gc-json-logger-nestjs/blob/2cea8d0/src/logger.ts#L59)
 
 ___
 
@@ -194,7 +194,7 @@ ILogger.getLabels
 
 #### Defined in
 
-[src/logger.ts:95](https://github.com/igrek8/gc-json-logger-nestjs/blob/2960b22/src/logger.ts#L95)
+[src/logger.ts:95](https://github.com/igrek8/gc-json-logger-nestjs/blob/2cea8d0/src/logger.ts#L95)
 
 ___
 
@@ -212,7 +212,7 @@ ILogger.getName
 
 #### Defined in
 
-[src/logger.ts:99](https://github.com/igrek8/gc-json-logger-nestjs/blob/2960b22/src/logger.ts#L99)
+[src/logger.ts:99](https://github.com/igrek8/gc-json-logger-nestjs/blob/2cea8d0/src/logger.ts#L99)
 
 ___
 
@@ -237,7 +237,7 @@ ILogger.info
 
 #### Defined in
 
-[src/logger.ts:35](https://github.com/igrek8/gc-json-logger-nestjs/blob/2960b22/src/logger.ts#L35)
+[src/logger.ts:35](https://github.com/igrek8/gc-json-logger-nestjs/blob/2cea8d0/src/logger.ts#L35)
 
 ___
 
@@ -263,7 +263,7 @@ ILogger.log
 
 #### Defined in
 
-[src/logger.ts:11](https://github.com/igrek8/gc-json-logger-nestjs/blob/2960b22/src/logger.ts#L11)
+[src/logger.ts:11](https://github.com/igrek8/gc-json-logger-nestjs/blob/2cea8d0/src/logger.ts#L11)
 
 ___
 
@@ -288,7 +288,7 @@ ILogger.notice
 
 #### Defined in
 
-[src/logger.ts:43](https://github.com/igrek8/gc-json-logger-nestjs/blob/2960b22/src/logger.ts#L43)
+[src/logger.ts:43](https://github.com/igrek8/gc-json-logger-nestjs/blob/2cea8d0/src/logger.ts#L43)
 
 ___
 
@@ -312,7 +312,7 @@ ILogger.setLabels
 
 #### Defined in
 
-[src/logger.ts:91](https://github.com/igrek8/gc-json-logger-nestjs/blob/2960b22/src/logger.ts#L91)
+[src/logger.ts:91](https://github.com/igrek8/gc-json-logger-nestjs/blob/2cea8d0/src/logger.ts#L91)
 
 ___
 
@@ -337,7 +337,7 @@ ILogger.warning
 
 #### Defined in
 
-[src/logger.ts:51](https://github.com/igrek8/gc-json-logger-nestjs/blob/2960b22/src/logger.ts#L51)
+[src/logger.ts:51](https://github.com/igrek8/gc-json-logger-nestjs/blob/2cea8d0/src/logger.ts#L51)
 
 ## Constructors
 
@@ -354,4 +354,4 @@ ILogger.warning
 
 #### Defined in
 
-[src/logger.ts:6](https://github.com/igrek8/gc-json-logger-nestjs/blob/2960b22/src/logger.ts#L6)
+[src/logger.ts:6](https://github.com/igrek8/gc-json-logger-nestjs/blob/2cea8d0/src/logger.ts#L6)
